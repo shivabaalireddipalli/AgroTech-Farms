@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Consumer details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style/template1.css">
+</head>
+<body>
+<form action="hello" >
+  <center>
+<div class="container">
+  <h2>Consumer Details</h2>
+
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead >
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Experience</th>
+        <th>Ddate</th>
+          <th>Address</th>
+        <th>Pincode</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for i in consumer %}
+        <td>{{i.Fname}}</td>
+        <td>{{i.Email}}</td>
+        <td>{{i.Gender}}</td>
+        <td>{{i.Qualification}}</td>
+        <td>{{i.Ddate}}</td>
+        <td>{{i.Address}}</td>
+        <td>{{i.Pincode}}</td>
+
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</form>
+</center>
+</body>
+</html>

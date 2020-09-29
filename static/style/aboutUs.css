@@ -1,0 +1,114 @@
+body{
+backgound-color:baby blue;
+}
+.p{
+         color: white; 
+         background-color:#ffffff;
+         width: 400px;
+         text-indent:25px;		 
+} 
+.h1 
+         { 
+         color: white; 
+         background-color: 009900; 
+         width: 400px; 
+         } 
+.h2 
+         { 
+         color: white; 
+         background-color: 009900; 
+         width: 400px; 
+         }
+our clients
+{
+width:100%;
+height:25%;
+
+}
+.farmer{
+     float:left;
+	width:29.00%;
+    height:20%;
+    border-style: double;
+    padding:1%;
+    margin:8px;
+    border-color: lightblue;
+    border-radius: 12px;
+}
+
+.agent{
+	float:left;
+	width:29.00%;
+    height:20%;
+   border-style: double;
+   padding:1%;
+   margin:8px;
+   border-color: lightblue;
+    border-radius: 12px;
+}
+.consumer{
+	float:left;
+	width:29.00%;
+	height:20%;
+   border-style: double;
+   border-color: lightblue;
+   padding:1%;
+   margin:8px;
+    border-radius: 12px;
+
+}
+img{
+border-radius: 50%;
+}
+.farmer{
+         float: left; 
+		 width:30.00%;
+		 height:25%;
+		 padding:1%;
+
+
+}
+.services{
+	width:100%;
+ float:right;
+
+}
+
+
+.helping{
+	float:left;
+	width:45%;
+	padding:2%;
+	border-radius: 12px;
+border-style: groove;
+}
+.cart{
+	float:right;
+	width:45%;
+	padding:2%;
+	border-radius: 12px;
+	border-style: groove;
+}
+.second{
+	width:100%;
+	float:left;
+}
+.Rabi
+{
+padding:1%;
+border-radius: 12px;
+border-style: groove;
+margin:5px;
+}
+.Kharif{
+padding:1%;
+border-radius: 12px;
+border-style: groove;
+margin:5px;
+}
+.Zaid{
+padding:1%;
+border-radius: 12px;
+border-style: groove;
+margin:5px;
+}

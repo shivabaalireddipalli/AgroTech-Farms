@@ -1,0 +1,7 @@
+.container{
+  padding: 50px;
+  margin: 20px;
+  background-color: lightgrey;
+  border: 15px solid green;
+  margin-bottom: 3em;
+}

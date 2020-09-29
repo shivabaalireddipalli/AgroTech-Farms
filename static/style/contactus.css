@@ -1,0 +1,40 @@
+.contact{
+float:left;
+width:60%;
+}
+.example{
+	float:left;
+	width:20%;
+	
+}
+.fristname{
+	float:left;
+	width:40%;
+}
+.lastname{
+	float:left;
+	width:40%;
+}
+input[type=text],input[type=email],textarea  {
+  width: 75%;
+  padding: 8px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 2px solid #aaa;
+  border-radius:2px;
+  background: #f1f1f1;
+  box-sizing:border-15x;
+
+}
+input[type=text]:focus, input[type=email]:focus,textarea:focus{
+  border-color:dodgerBlue;
+  box-shadow:0 0 8px 0 dodgerblue;
+}
+input[type=submit]{
+	color:green;
+	background:gray;
+}
+input
+ {
+  border-radius: 12px;
+}

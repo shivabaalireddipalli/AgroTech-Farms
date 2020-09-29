@@ -1,0 +1,123 @@
+body
+{
+margin:0;
+padding:0;
+background:#fff;
+font-family:'RALEWAY',sans-serif;
+color:#333;
+}
+.banner{
+	height:100%;
+	width:100%;
+	background-position:top;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+.banner{
+padding:0;
+margin:0;
+position:relative;
+animation-iteration-count:infinite;
+animation-name:first;
+animation-duration:10s;
+animation-timing-function:linear;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+@keyframes first{
+0%{background-image:url("/static/images/1.jpg");}
+25%{background-image:url("/static/images/2.jpg");}
+50%{background-image:url("/static/images/c.png")}
+75%{background-image:url("/static/images/4.jpg")}
+100%{background-image:url("/static/images/5.jpg")}
+}
+
+.banner.navbar-brand{
+color:#fff;
+font-size:1.8em;
+font-weight:700;
+margin-left:10%;
+}
+.banner,nav li a{
+color:#fff;
+font-size:1.0em;
+}
+
+.banner.info, h1
+{
+font-size:1.0em;
+font-weight:700;
+color:green;
+letter-spacing:2px;
+
+}
+.container1{
+		height:100px;
+		width:400px;
+	background-color: transparent;
+		margin:0 auto;
+		position:absoulte;
+		left:50%;
+		margin-top:200px;
+}
+
+.dropbtn {
+  background-color:#4CAF50;
+  color:white;
+  border-radius:10px;
+  padding:10px;
+  font-size:13px;
+  border:none;
+  cursor:pointer;
+  margin-left:140px;
+  box-shadow:0px 8px 8px 0px rgba(0,0,0,0.2);
+  }
+
+.dropdown {
+  position:relative;
+  display:inline-block;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color:#4CAF50;
+  min-width:55px;
+  margin-left:170px;
+  box-shadow:0px 8px 8px 0px rgba(0,0,0,0.2);
+  z-index:1;
+  border-radius:10px;
+}
+
+.footer{
+background-color:gray;
+margin-top: 30px
+}
+
+.dropdown-content a {
+  color:black;
+  padding:10px 10px;
+  text-decoration:none;
+  display:block;
+  box-shadow:0px 8px 8px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+box-shadow:0px 8px 8px 0px rgba(0,0,0,0.2);
+border-radius:10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.lop{
+width:100%;
+}

@@ -1,0 +1,140 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/static/style/Crop Register.css">
+<script >
+function myprint() {
+  window.print();
+}
+</script>
+<title>Crop Register</title>
+</head>
+<body>
+<form action="cropreg" method="post">
+    {% csrf_token %}
+
+
+    <div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="Thankyou">Home</a>
+  <a href="agentf">Users</a>
+    <a href="Farmer" class="right">Farmers Registration</a>
+
+  <a href="Cart2" class="right">Add Items to Cart</a>
+</div>
+
+<div class="shiva">
+  <img src="/static/images/shiva.png" alt="logo">
+
+<table align="center" cellpadding = "10">
+
+<tr>
+<td>Farmer's register number:</td>
+<td><input type="text" name="number" id="number"><br>
+</td>
+</tr>
+
+
+<tr>
+<td>Crop ID:</td>
+<td><input type="text" name="ciname" id="cropid">
+<br>
+</td>
+</tr>
+<tr>
+<td>
+Crop name:</td>
+<td><input type="text" name="cnname" id="cropname">
+<br>
+</td>
+</tr>
+
+<tr>
+<td>Area of  Farming:</td>
+<td><input type="text" name="aname" id="area"></td>
+</tr>
+
+<tr>
+<td>
+Type of Soil: </td>
+<td><select name="soil">
+<option  value="select">Select</option>
+<option value="Loam" >Loam</option>
+<option value="Clay" >Clay</option>
+<option value=" Sand">Sand</option>
+<option value="Silt" >Silt</option>
+<option value="peat" >Peat</option>
+<option value="Others"> others</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Water Source :</td>
+<td><input type="text" name="wname" id="water" ><br>
+</td>
+</tr>
+
+
+<tr>
+<td>
+Start Date of Crop(approximately): </td>
+<td><input type="date" name="date" ></td>
+</tr>
+
+<tr>
+<td>End Date of Crop(approximately):
+</td>
+<td>
+<input type="date" name="Edate">
+</td>
+</tr>
+
+
+<tr>
+<td>
+Requirement of loan:</td>
+<td>
+Yes <input type="radio" name="loan" value="yes" />
+NO <input type="radio" name="loan" value="no" />
+</td>
+</tr>
+
+<!--------Fertilizers and pes----------------------->
+
+<tr>
+<td>Requirement of Fertilizer and Pesticides:</td>
+<td>
+Yes <input type="radio" name="pesticides" value="yes" />
+NO <input type="radio" name="pesticides" value="no" />
+</td>
+</tr>
+
+<tr>
+<td><pre>
+<input type="checkbox" name="har" value="1">
+AgroTech Farms assure, 
+Your products by TradeMark Standards.
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<button onclick="myprint()">Print </button>
+</td>
+</tr>
+
+
+</table>
+<footer>
+
+  <p style="font-size: 25px; color: white;text-align: center; padding-top: 10px;">AgroTech farms</p>
+</footer>
+
+
+</table>
+</form>
+</body>
+</html>

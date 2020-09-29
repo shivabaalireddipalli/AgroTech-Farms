@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>customer quries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/style/template.css">
+</head>
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="Thankyou">Home</a>
+  <a href="agentf">Users</a>
+
+</div>
+<form action="hello" >
+<!--<a href="Thankyou" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-arrow-left"></span>Back
+        </a>-->
+  <center>
+<div class="container">
+  <h2>Consumers Quries</h2>
+
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Describe_info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for i in contact %}
+        <td>{{i.Fname}}</td>
+        <td>{{i.email1}}</td>
+        <td>{{i.textf}}</td>
+
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</form>
+</center>
+<h1><b>Contact to customer quries</h1>
+
+</body>
+</html>

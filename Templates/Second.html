@@ -1,0 +1,106 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to Agro</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/style/second.css">
+
+</head>
+<body>
+<form action="Thankyou" method="Post">
+    {% csrf_token %}
+<div class="header">
+  <h1>AgroTech Farms</h1>
+  <p>A website potal for farmers.</p>
+</div>
+
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="homeback">Home</a>
+  <a href="agentf">Users</a>
+ {% if user.is_authenticated %}
+ <a href="logout1" >LogOut</a>
+     {% endif  %}
+    <a href="Farmer" class="right">Farmers Registration</a>
+    <a href="cropreg" class="right">Crop Registration</a>
+  <a href="Cart2" class="right">Add Items to Cart</a>
+</div>
+
+<div class="row">
+  <div class="side">
+     <!---   <a href="homeback" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-arrow-left"></span> Home
+        </a>
+-->
+    <h2 style="color:blue;">welcome  {{  un}}  </h2>
+    <h5>AgroTech :</h5>
+    <div class="label1" style="height:200px;"></div>
+    <p > A farmer  is a person engaged in agriculture, raising living organisms for food or raw materials.Farmers are an important part of the survival of our various societies because they provide food and fiber that nourishes and cloths us. They make responsible use of natural resources and utilize both primitive and very advanced technologies to accomplish this.</p>
+
+      <h4><b>Sales :</b></h4>
+
+      <div class="label2" style="height:180px;"><b>Sales is not about selling anymore,but about building trust and educating to Farmers.</b>Here agent acts a salepersons.Sales Department adding  news farmers  and  crop register
+      explain the avaliable schemes  to farmers.
+      </div><br>
+	 <a href="farmerf"  class="button">Farmer and Crop </a>
+     <p> sales departement will take care new registrations</p>
+	
+
+
+      <h4><b>Marketing:</b></h4>
+      <br>
+    <div class="label3" style="height:180px;"> Many companies have forgotten they sell to actual people. Humans care about the entire experience, not just the marketing or sales. To really win in the modern age.
+    Here consumer act as marketing person,his work use to upload all the avaliabe products to cart and also resolve cart related issues.
+    </div><br>
+	<a href="feedback1" class="button">Feedback</a>
+      <p>Will see the reviews of retailers</P>
+	
+	<h4><b>Support:</b></h4>
+      <br>
+    <div class="label4" style="height:120px;">
+        Support team will follow up the treader,Agent and farmer  queirs.They will take care of advertisement, and promotions of the products.
+        and they will find the new customers and farmers to increase the Business.
+    </div>
+	<a href="contactFetch" class="button">Customer Quries</a>
+      <p>Agent will resolve the customer queries</p>
+	
+  </div>
+  <div class="main">
+  <h2>National Farmers Day</h2>
+    <h5>Agriculture is the most important sector of Indian Economy. Indian agriculture sector accounts for 18 per cent of India's gross domestic product (GDP) and provides employment to 50% of the countries workforce. ... India has emerged as the second largest producer of fruits and vegetables in the world .</h5>
+    <div class="label5" style="height:300px;"></div>
+    <p>A nation can grow only when its farmers are happy and progressive. Therefore, every year December 23 is celebrated as Kisan Diwas or National Farmers Day to observe the birth anniversary of Chaudhary Charan Singh."</p>
+
+    <br>
+       <h2>Crop and Agriculture insurance(Scheme)</h2>
+    <h5>Agriculture in India is highly susceptible to risks like droughts and floods. It is necessary to protect the farmers from natural calamities and ensure that no loss as been occur farmer from this floods and droughts. For this purpose, the AGROTECH introduced many agricultural schemes throughout the country.</h5>
+      <div class="label6" style="height:200px;"></div>
+      <p>Droughts occur when an abnormally long dry period uses up available water resources. Floods happen when watercourses or rain swallow up land that is usually uncovered. These natural disasters are often made worse by human action. Based on the insurance plan taken by the farmer.We are going the give relif to the farmer.</p>
+ <br>
+       <h2>Farmer Life insurance(Scheme)</h2>
+    <h5>AGROTECH introduce a new scheme  as<b> Farmer Life Insurance and health Insurance</b>.Under this schema  to farmer's get <u>LIFE INSURANCE AND MEDICAL INSURANCE</u> Unexcept death and dismemberment occur is a policy that pays benefits to the beneficiary if the cause of death is an accident .Health insurance is a type of insurance coverage that pays for medical, surgical, and sometimes dental expenses incurred by the insured. Health insurance can reimburse the insured for expenses incurred from illness or injury, or pay the care provider directly.   </h5>
+      <div class="label7" style="height:300px;"></div>
+      <p>The premiums on whole life insurance (sometimes called cash value insurance) are generally more expensive than term life for a couple of reasons. Whole life coverage lasts throughout your entire lifetime. ... Because you'll have zero debt, a full emergency fund and a hefty amount of money in your investments..</p>
+
+  </div>
+</div>
+<div class="footer">
+<h2>Address</h2>
+  Head Office
+#323 Krupanidhi groups of institutions
+Gunur
+Banglore, India 94158
+info@mysite.com
+
+Tel: 080-8555868
+
+Fax: 123-456-7890
+<br>
+<h2>Thank you</h2>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta charset="utf-8">
+ <title>Agent Signup</title>
+ <link rel="stylesheet" type="text/css" href="/static/style/AgentSignup.css">
+    <script src="/static/script/password.js"></script>
+
+
+</head>
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="homeback">Home</a>
+  <a href="Login" >Login</a>
+</div>
+
+
+
+<form name="myform" action="agentin" method="POST" onsubmit="return validpassword(this)" >
+    {% csrf_token %}
+
+    <div class="logo">
+  <br>
+ <h1> WELCOME TO AGROTECH FARMS</h1>
+ <br>
+        <img src="/static/images/Screenshot.png" alt="logo" style="width:270px; height:270px; align="center" />
+    </div>
+
+
+
+
+ <div class="container">
+ <h1>Create a new  account</h1>
+
+<hr>
+  <div id="firstname">Frist Name:
+  <input type="text" id="Fname" placeholder="First Name" name="Fname" pattern="[A-Za-z]{1,}" title="First name should be character" />
+  </div>
+
+  <div id="lastName">Last Name:
+  <input type="text" id="Lname" placeholder="Last Name" name="Lname" pattern="[A-Za-z]{1,}" title="Last name should be character" />
+  </div>
+     Enter your Email:
+     <br>
+            <input type="email" id="email" placeholder="example@gmail.com" name="Email" />
+     <br>
+     Select Gender:
+ <input type="radio" name="gender" value="male"> Male
+ <input type="radio" name="gender" value="female"> Female
+<br><br>
+     Qualification
+     <br>
+     <input type="text" placeholder="ex B.sc" name="qualification" pattern="[A-Za-z]{1,}" title="Qualification should characters eg MCA">
+     <br>
+
+Date of Birth:<br>
+     <input type="date" name="ddate">
+     <br>
+Enter any ID proof number:
+<br>
+<input type="text" id="name" placeholder="Aadhar number" name="Iname" id="name"  pattern="[0-9]{6,}" title="Id should benumerical field" />
+<br>
+     Address :
+     <br>
+     <textarea rows="4" cols="60" name="region" placeholder="enter your address"></textarea>
+     <br>
+
+Pincode:<br>
+<input type="text" id="pincode" placeholder="Pincode" name="Pname" pattern="[0-9]{6}" title="6 Digits pin code" />
+<br>
+
+
+     password:<br>
+<input type="password" id="pass1" placeholder="enter password" name="password1" /><br>
+Confirm password:<br>
+<input type="password" id="pass2" placeholder="Comfirm password" name="password2" /></i>
+<br>
+
+<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+</hr>
+<input type="submit" class="registerbtn" value="submit" >
+
+
+</div>
+</form>
+</body>
+</html>

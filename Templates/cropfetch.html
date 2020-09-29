@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/style/template1.css">
+</head>
+<body>
+<form action="farmerf" >
+
+<!--<a href="Thankyou" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-arrow-left"></span>Back
+        </a>-->
+<center>
+  <div class="container">
+
+  <h2>Crop Details</h2>
+
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Crop Fname</th>
+        <th>Area of farming</th>
+        <th>Type of soil</th>
+        <th>Water source</th>
+          <th>Crop Start Date</th>
+        <th>Loan Required</th>
+          <th>Fertilizer required</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for i in crop %}
+
+        <td>{{i.CropN}}</td>
+        <td>{{i.Area}}</td>
+        <td>{{i.Typesoil}}</td>
+        <td>{{i.WaterS}}</td>
+        <td>{{i.Edate}}</td>
+        <td>{{i.Loanreq}}</td>
+        <td>{{i.Ferreq}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  </div>
+</div>
+
+</center>
+</form>
+</body>
+</html>

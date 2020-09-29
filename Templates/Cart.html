@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Shoping cart</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/static/style/Cart.css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+
+<div class="navbar1">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="homeback">Home</a>
+
+     <a href="CartLogin"  class="right" >Checkout</a>
+    <!--<a href="CartLogin" >Check Out</a>-->
+
+  <a href="#"  class="right" >Cart <span>{{cart}}</span></a>
+
+</div>
+<div class="frist">
+  <header><img src="/static/images/Screenshot1.png" height="60" ></header>
+  </div>
+
+<div class="container">
+    <div class="page-header">
+    <h1 >ArgoTech Products</h1>
+    <p><b>one stop to all the products</b></p>
+    </div>
+</div>
+
+  <div class="container">
+
+{% for desc in name %}
+
+<form action="Bagitems" method="post">
+          {% csrf_token %}
+
+
+  <div class="part1 cardblock">
+
+      <input type="hidden" name="productno" value="{{desc.ProductId}}">
+      <p><img src="/media/{{ desc.ProductImage }}"/></P>
+      <P>Product name:<b>{{desc.ProductName}}</b></P>
+     <input type="hidden" name="pname" value="{{desc.ProductName}}">
+      <P>Contact:{{desc.Contact_info}}</p>
+      <input type="hidden" name="cname" value="{{desc.Contact_info}}">
+      <P>Name:{{desc.FarmerDetails}}</P>
+      <P>Price Unit:<b>{{desc.Price}}</b></P>
+          <input type="hidden" name="price1" value="{{desc.Price}}">
+
+          <P class="addblo"><button type="submit" class="btn btn-info btn sm">add to cart</button></P>
+	</div>
+          </form>
+        {% endfor %}
+
+  </div>
+
+  </body>
+ </html>

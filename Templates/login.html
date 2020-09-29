@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale-1.0"> 
+ <title>Login</title>
+ <link rel="stylesheet" type="text/css" href="/static/style/login.css">
+ <script src="/static/script/login.js">
+
+ </script>
+</head>
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="homeback">Home</a>
+    <a href="Cart1" >Shopping</a>
+</div>
+
+<form action="Login1" method="post">
+    {% csrf_token %}
+<div  class="container ">
+<br>
+<P>Please give your account details to login.</P>
+<hr>
+<input type="text" id="Uname" placeholder="UserName" name="Uname"/>
+<br>
+<div login="loginid">
+<input type="password" id="pword" placeholder="Password" required  name="password"/>
+<input type="checkbox" id="check" onclick="show()"/>show password
+</div>
+<br>
+<input class="logbtn" type="submit" name="" value="login">
+<hr>
+<p><a href="">forgot password ?</a>.</p>
+    <p><b>Don't have account please <b><a href="div">Sign up</a></b></p>
+  </div>
+
+  <div class="logo">
+  <header id="head">  
+      <h1 id="h1">Welcome!</h1>
+      <h1 id="h1">AgroTech Farms</h1>
+  </header>
+</div>
+
+</form>
+</body>
+</html>

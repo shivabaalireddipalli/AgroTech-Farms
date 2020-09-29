@@ -1,0 +1,63 @@
+body
+{
+margin:0;
+padding:0;
+background:#fff;
+font-family:'RALEWAY',sans-serif;
+color:#fff;
+}
+.banner{
+	height:100%;
+	width:100%;
+	background-position:top;
+	background-size:cover;
+	background-repeat:no-repeat;
+
+}
+body{
+padding:0;
+margin:0;
+position:relative;
+animation-iteration-count:infinite;
+animation-name:first;
+animation-duration:10s;
+animation-timing-function:linear;
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+@keyframes first{
+0%{background-image:url("1.jpg");}
+25%{background-image:url("2.jpg");}
+50%{background-image:url("3.jpg")}
+75%{background-image:url("4.jpg")}
+100%{background-image:url("5.jpg")}
+}
+
+.banner.navbar-brand{ 
+color:#fff;
+font-size:1.8em;
+font-weight:700;
+margin-left:10%;
+}
+.banner,nav li a{
+color:#fff;
+font-size:1.5em;
+}
+	
+.banner.info, h1
+{
+font-size:1.0em;
+font-weight:700;
+color:green;
+letter-spacing:2px;
+
+}
+
+.col-md-6 offset-md-3 info {
+    height: 10em;
+    position: relative ;
+	margin-top:auto;
+	
+	}

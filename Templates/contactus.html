@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>contactUs </title>
+<link rel="stylesheet" href="/static/style/contactus.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<form action="contactus" method="post" >
+    {% csrf_token %}
+<center><h1 style=color:black;>Feel free to contact</h1></center>
+<div class="contact">
+<h2>Get In Touch</h2>
+    <p><b>Looking for assistance? Connect with us and let us help you with your sustainable journey.</p>
+<div class="fristname">
+<input type="text" placeholder="Firstname" name="Fname">&nbsp &nbsp &nbsp &nbsp &nbsp
+</div>
+<div class="lastname">
+<input type="text" placeholder="Lastname" name="Lname">
+</div>
+<br>
+<br>
+<input type="email" placeholder="example@gmail.com" name="Email">
+<br>
+<br>
+<textarea  rows="6" cols="100" placeholder="Describe yourself here..."name="texta"></textarea>
+    <br><br>
+    <button type="submit" class="btn btn-success btn-md ">Submit</button>
+</div>
+</form>
+<div class="example">
+<h1> Contact Info</h1>
+Address to communication:
+    <address>
+
+Written by <a href="mailto:AgroTechfarms@example.com">Shiva B</a>.<br>
+Visit us at:<br>
+Example1.com<br>
+Box 564, Dreamland<br>
+Banglore
+</address>
+<br>
+<br>
+Phone:<br>
++91888888888
+<br><br>
+Email:<br>
+example@gmail.com
+</div>
+<div>
+<center>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="694" height="296" id="gmap_canvas" src="https://maps.google.com/maps?q=krupanidhi&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-pro-discount-code-review/">embedgooglemap.net</a></div><style>.mapouter{position:relative;text-align:right;height:296px;width:694px;}.gmap_canvas {overflow:hidden;background:none!important;height:296px;width:694px;}</style></div>
+</center>
+</div>
+    </form>
+</body>
+</html>

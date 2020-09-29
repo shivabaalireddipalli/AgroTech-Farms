@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>ADD Items To Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/static/style/addcart.css">
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="Thankyou">Home</a>
+  <a href="agentf">Users</a>
+    <a href="Farmer" class="right">Farmers Registration</a>
+    <a href="cropreg" class="right">Crop Registration</a>
+
+</div>
+<div class="shiva">
+<form action="Cart3" method="post" enctype="multipart/form-data" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
+    {% csrf_token %}
+
+<h2 class="w3-center">Add Items To Cart</h2>
+
+<div class="w3-row w3-section">
+  Product Id:
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="PID" type="text" placeholder="Product number">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  Product Name:
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="PName" type="text" placeholder="Ex. apple">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  Product Image:
+    <div class="w3-rest">
+      <input class="w3-input w3-border"  type="file" name="PFile" >
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  Farming details:
+    <div class="w3-rest">
+      <input class="w3-input w3-border" name="PFarmer" type="text" placeholder="farmer name">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  Contact Info:
+  <div class="w3-rest">
+      <input class="w3-input w3-border" name="PInfo" type="text" placeholder="phone NO">
+    </div>
+</div>
+  <div class="w3-row w3-section">
+  Quantity :
+  <div class="w3-rest">
+      <input class="w3-input w3-border" name="Total" type="number" placeholder="Product in kgs">
+    </div>
+</div>
+
+<div class="w3-row w3-section">
+  Price:
+  <div class="w3-rest">
+      <input class="w3-input w3-border" name="PPrice" type="text" placeholder="amount">
+    </div>
+</div>
+
+<p class="w3-center">
+<input type="submit"  class="w3-button w3-section w3-blue w3-ripple">  </type>
+</p>
+</form>
+
+</body>
+</html>

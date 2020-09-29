@@ -1,0 +1,64 @@
+
+<html>
+<head>
+  <title>Agent and consumer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style/template.css">
+</head>
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="Thankyou">Home</a>
+    <a href="Farmer" class="right">Farmers Registration</a>
+    <a href="cropreg" class="right">Crop Registration</a>
+
+</div>
+<!---
+<form action="hello" >
+
+        <a href="Thankyou" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-arrow-left"></span>Back
+        </a>
+ --> <center>
+<div class="container">
+  <h2>Agent Details</h2>
+
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Qualification</th>
+        <th>Ddate</th>
+          <th>Address</th>
+        <th>Pincode</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for i in agent %}
+        <td>{{i.Fname}}</td>
+        <td>{{i.Email}}</td>
+        <td>{{i.Gender}}</td>
+        <td>{{i.Qualification}}</td>
+        <td>{{i.Ddate}}</td>
+        <td>{{i.Address}}</td>
+        <td>{{i.Pincode}}</td>
+
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+</form>
+</center>
+<iframe id="agent" src="consumerf"  style="border:none;" height="700" width="1500"  ></iframe
+</body>
+</html>

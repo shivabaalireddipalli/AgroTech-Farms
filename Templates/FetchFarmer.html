@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Farmer and Crop details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/style/template.css">
+</head>
+<body>
+<div class="navbar">
+
+  <!--<a href="farmerf">Farmers</a>-->
+    <a href="Thankyou">Home</a>
+    <a href="Farmer" class="right">Farmers Registration</a>
+    <a href="cropreg" class="right">Crop Registration</a>
+  <a href="Cart2" class="right">Add Items to Cart</a>
+</div>
+
+<form action="farmerf"  method="post">
+
+<!---<a href="Thankyou" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-arrow-left"></span>Back
+        </a>-->
+
+  <div class="container">
+
+  <h2>Farmer Details</h2>
+
+  <div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Number</th>
+        <th>Firstname</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Mobile</th>
+          <th>Gender</th>
+        <th>Address</th>
+          <th>Total Land</th>
+          <th>Crop Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        {% for i in farmers %}
+        <td>{{i.Regnumber}}</td>
+        <td>{{i.Fname}}</td>
+        <td>{{i.Email}}</td>
+        <td>{{i.Bdate}}</td>
+        <td>{{i.Mobile}}</td>
+        <td>{{i.Gender}}</td>
+        <td>{{i.Address}}</td>
+        <td>{{i.Tland}}</td>
+        <td>{{i.Ctype}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+  <iframe id="agent" src="crop" height="700" width="1500"></iframe
+</form>
+</body>
+</html>
